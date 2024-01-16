@@ -66,10 +66,10 @@ class Money(val amount: Int, val currency: String){
             Pair("CAN", "USD") -> Money((this.amount * 5 / 4).toInt(), "USD")
             Pair("EUR", "GBP") -> Money((this.amount * 1 / 3).toInt(), "GBP")
             Pair("GBP", "EUR") -> Money((this.amount * 3).toInt(), "EUR")
-            Pair("CAN", "EUR") -> Money((this.amount * 5 / 6).toInt(), "EUR")
-            Pair("EUR", "CAN") -> Money((this.amount * 6 / 5).toInt(), "CAN")
-            Pair("CAN", "GBP") -> Money((this.amount * 5 / 2).toInt(), "GBP")
-            Pair("GBP", "CAN") -> Money((this.amount * 2 / 5).toInt(), "CAN")
+            Pair("CAN", "EUR") -> Money((this.amount * 6 / 5).toInt(), "EUR")
+            Pair("EUR", "CAN") -> Money((this.amount * 5 / 6).toInt(), "CAN")
+            Pair("CAN", "GBP") -> Money((this.amount * 2 / 5).toInt(), "GBP")
+            Pair("GBP", "CAN") -> Money((this.amount * 5 / 2).toInt(), "CAN")
             else -> convert(convertCurr)
         }
     }
